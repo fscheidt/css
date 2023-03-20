@@ -9,6 +9,12 @@ body{
     gap: 20px;
     align-items: center;
 }
+pre{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    border: 1px solid darkcyan;
+    padding: 20px;
+}
 .topic{
     font-family: 2rem !important;
     border: 1px solid rgb(104, 104, 104);
@@ -34,7 +40,7 @@ a{
     font-size: 28px;
     display: inline-grid;
     grid-template-columns: max-content;    
-    gap: 20px;
+    gap: 10px;
 }
 ol{
     list-style: upper-roman;
@@ -43,5 +49,5 @@ ol{
     padding: 10px 0px;
 }
 .nav a:hover{
-    background-color: rgb(230, 245, 240);
+    background-color: rgba(230, 245, 240, 0.455);
 }
