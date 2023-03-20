@@ -2,11 +2,15 @@
 :root {
     --border-color: darkcyan;
     --bg-color: indigo;
+    --bg-container: #ccc;
     --text-color: white;
     --a-color: navy;
     --a-empty-color: rgb(152, 71, 71);
     --font-mono: 'JetBrains Mono';
+    --font-mono-2: 'Inconsolata';
+    --font-narrow: 'Archivo Narrow';
     --font-sans: 'Albert Sans';
+    --font-sans-2: 'Noto Sans';
     --topic-color: rgb(104, 104, 104);
 }
 body {
@@ -90,4 +94,10 @@ a.ext::before{
 }
 .nav a:hover {
     background-color: rgba(230, 245, 240, 0.455);
+}
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 0 0 30px;
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout básico - 1 coluna</title>
+    <style>
+    .topo {
+        border: 1px solid darkblue;
+        text-align: center;
+        background-color: #ccc;
+    }
+    .conteudo{
+        border: 1px solid darkmagenta;
+        padding: 20px;
+        min-height: 60vh;
+    }
+    .menu{
+        margin: 0px 20px;
+        background-color: #e1e0e0;
+        padding: 10px;
+        border-radius: 2px;
+    }
+    .menu a{
+        /* regra por condição: somente os links dentro
+        do menu recebem esse estilo */
+        text-decoration: none;
+        padding: 0px 10px;
+    }
+    .menu a:hover{
+        background-color: cornsilk;
+        /*border-radius: 50%;*/
+    }
+    .rodape{
+        border: 1px solid darkolivegreen;
+        padding: 20px;
+    }
+    .container{
+        padding: 10px;
+        /*border: 1px solid darkcyan;*/
+        min-height: 90vh;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <div class="topo">
+        <!-- div - divisão  representa o cabeçalho/header da página -->
+        <h1>Desenvolvimento....</h1>
+        <div class="menu">
+            <a href="#">Login</a>
+            <a href="#">Sair</a>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptas laboriosam veniam ratione vero. Eveniet officiis perspiciatis soluta vitae doloribus aperiam modi nisi, sequi magnam tempora? Suscipit molestiae earum dignissimos?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem, nobis magnam assumenda laborum rem voluptas ullam minima quis doloribus eos dicta incidunt tenetur porro necessitatibus illum quasi odit. Incidunt.</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis assumenda error possimus quaerat inventore dolore ullam nulla, sequi sunt similique numquam, autem adipisci voluptatem repudiandae fuga odit reprehenderit, quo ut.</p>
+    </div>
+
+    <div class="rodape" style="text-align:center">
+        <a href="#">Desenvolvido por empresa SA</a>
+        <a href="#">Mapa do site</a>
+        <a href="#">Saiba mais</a>
+    </div>
+
+    </div> <!-- fechamento da container -->
+</body>
+</html>
