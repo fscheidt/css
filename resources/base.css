@@ -1,8 +1,15 @@
+:root{
+    --border-color: darkcyan;
+    --a-color: navy;
+    --a-empty-color: rgb(152, 71, 71);
+    --font-mono: 'JetBrains mono';
+    --topic-color: rgb(104, 104, 104);
+}
 body{
     padding: 10px;
 }
-.code{
-    font-family: 'JetBrains mono';
+.code, .c{
+    font-family: var(--font-mono);
 }
 .title{
     display: flex;
@@ -12,12 +19,12 @@ body{
 pre{
     font-size: 1.2em;
     line-height: 1.6em;
-    border: 1px solid darkcyan;
+    border: 1px solid var(--border-color);
     padding: 20px;
 }
 .topic{
     font-family: 2rem !important;
-    border: 1px solid rgb(104, 104, 104);
+    border: 1px solid var(--topic-color);
     padding: 4px 8px;
     font-weight: bold;
     border-radius: 3px;
@@ -26,15 +33,17 @@ pre{
     color: indigo;
     border-color: indigo;
 }
-a.index{
-    font-size: 24px;
+.logo{
+    background-image: url('imgs/gh.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-a.ext::before{
-    content: '➥ ';
-}
-a{
-    color: navy;
-    text-decoration: none;
+a.logo{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    float: right;
 }
 .nav{
     font-size: 28px;
@@ -50,4 +59,22 @@ ol{
 }
 .nav a:hover{
     background-color: rgba(230, 245, 240, 0.455);
+}
+a{
+    color: var(--a-color);
+    text-decoration: none;
+}
+a.index{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'ubuntu';
+}
+a.index::before{
+    content: '▲ ';
+}
+a.ext::before{
+    content: '➥ ';
+}
+a[href="#"]{
+    color: var(--a-empty-color);
 }
