@@ -58,6 +58,10 @@ a.logo{
 ol{
     list-style: upper-roman;
 }
+#path{
+    color: darkgray;
+    font-family: var(--font-mono);
+}
 .nav a{
     padding: 10px 0px;
 }
