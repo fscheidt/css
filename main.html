@@ -2,30 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Flex index</title>
+<title>CSS</title>
 <link rel="stylesheet" type="text/css" href="base.css"/>
 <style>
-.nav{
-    font-size: 28px;
-    display: inline-grid;
-    grid-template-columns: max-content;    
-    gap: 10px;
+html, body{
+    margin: 0;
+    padding: 0;
 }
-a{
-    padding: 10px;
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
 }
-.nav a:hover{
-    background-color: rgb(230, 245, 240);
+.Main{
+    flex: 1 0 auto;
+    padding: 20px;    
+    background-color: rgb(194, 246, 141);
+}
+.Footer{
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
 }
 </style>
 </head>
 <body>
-<h1 class="code">Main topics</h1>
+<div class="Main">
+    <a class="index ext" href="https://github.com/fscheidt/css" target="_blank">github</a>
+    <h1 class="code">Main topics</h1>
 
-<div class="nav">
-    <a href="flex/index.html">flexbox</a>
-    <a href="grid/index.html">grid-layout</a>
+    <div class="nav">
+        <a href="flex/index.html">flexbox</a>
+        <a href="grid/index.html">grid-layout</a>
+    </div>
+    <p>content here</p>
 </div>
+
+<div class="Footer">footer</div>
 
 </body>
 </html>
