@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>justify-items</title>
+<title>justify-content</title>
 <link rel="stylesheet" type="text/css" href="../base.css"/>
 <style>
 p{
@@ -18,17 +18,33 @@ p{
     display: flex;
     gap: 10px;  
 }
+.Center{
+    justify-content: center;
+}
+.End{
+    justify-content: flex-end;
+}
 </style>
 </head>
 <body>
 <a class="index" href="index.html">index</a>
-<h1 class="code">11 - align-items</h1>
 
-<div class="content">
+<div class="title code">
+    <h1>justify-content</h1>
+    <span class='topic flex code'>flex</span>
+</div>
+
+<h2>(I) <b class='code'>justify-content: center</b></h2>
+<div class="content Center">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    
     <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    
+    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+</div>
+
+<h2>(II) <b class='code'>justify-content: flex-end</b></h2>
+<div class="content End">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
     <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
 </div>
 

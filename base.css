@@ -13,7 +13,12 @@ body{
     font-family: 2rem !important;
     border: 1px solid rgb(104, 104, 104);
     padding: 4px 8px;
+    font-weight: bold;
     border-radius: 3px;
+}
+.topic.flex{
+    color: indigo;
+    border-color: indigo;
 }
 a.index{
     font-size: 24px;
@@ -26,7 +31,10 @@ a{
     font-size: 28px;
     display: inline-grid;
     grid-template-columns: max-content;    
-    gap: 10px;
+    gap: 20px;
+}
+ol{
+    list-style: upper-roman;
 }
 .nav a{
     padding: 10px;
