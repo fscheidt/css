@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Align items</title>
+<link rel="stylesheet" type="text/css" href="base.css"/>
+<style>
+p{
+    background-color: indigo;
+    color: white;
+    padding: 20px;
+    width: 250px;
+}
+.container{
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 22px;
+    display: flex;
+    gap: 10px; 
+}
+.AlignCenter{
+    align-items: center; /* <----- centraliza na vertical */
+}
+.AlignTop{
+    align-items: flex-start;
+}
+.AlignBottom{
+    align-items: flex-end;
+}
+</style>
+</head>
+<body>
+<a class="index" href="index.html">index</a>
+
+<h1 class="code">align-items</h1>
+
+<h2>(1) container <u>flex</u> sem alinhamento</h2>
+<div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+</div>
+
+<h2>(2) container com align <u>center</u></h2>
+<div class="container AlignCenter">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+</div>
+
+<h2>(3) align top - <u>flex-start</u></h2>
+<div class="container AlignTop">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+</div>
+
+<h2>(4) align bottom- <u>flex-end</u></h2>
+<div class="container AlignBottom">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+</div>
+
+</body>
+</html>

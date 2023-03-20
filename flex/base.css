@@ -1,0 +1,13 @@
+body{
+    padding: 10px;
+}
+.code{
+    font-family: 'JetBrains mono';
+}
+a.index{
+    font-size: 24px;
+}
+a{
+    color: navy;
+    text-decoration: none;
+}
