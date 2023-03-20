@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>flex-basis</title>
+<link rel="icon" href="../resources/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+<script src="../resources/__config.js"></script>
+<style>
+    #content {
+        display: flex;
+    }
+    #content div{
+        padding: 20px 0px;
+        border: 3px solid rgba(0, 0, 0, 0.2);
+    }
+    .box0 {
+        flex-basis: 500px;
+        background-color:lightyellow;
+    }
+    .box1 {
+        flex-basis: 250px;
+        background-color:lightblue;
+    }
+    .box2 {
+        flex-basis: auto;
+        background-color:lightgreen;
+    }
+</style>
+</head>
+
+<body>
+<a class="index" href="index.html">index</a>
+<span id="path"></span>
+
+<div class="title code">
+    <h1>flex-basis</h1>
+    <span class='topic flex code'>flex</span>
+</div>
+
+<p>
+    The flex-basis CSS property sets the initial main size of a flex item. 
+    It sets the size of the content box unless otherwise set with box-sizing.
+    <a class="ext" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">mdn</a>.
+</p>
+
+<div id="content">
+  <div class="box0">A</div>
+  <div class="box1">B</div>
+  <div class="box2">C</div>
+</div>
+
+</body>
+</html>
+
+
