@@ -25,11 +25,15 @@ html, body{
     padding: 0;
 }
 body{
+    /* set a minimum of 100% height to the body */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;    
 }
 .container{
+    /*    1 - [grow] 1 means use all available space */
+    /*    0 - [shrink] 0 means do not shrink */
+    /* auto - [basis] set item size */
     flex: 1 0 auto;
 }
 .footer{

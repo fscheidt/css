@@ -1,5 +1,7 @@
 :root{
     --border-color: darkcyan;
+    --bg-color: indigo;
+    --text-color: white;
     --a-color: navy;
     --a-empty-color: rgb(152, 71, 71);
     --font-mono: 'JetBrains mono';
@@ -17,10 +19,12 @@ body{
     align-items: center;
 }
 pre{
-    font-size: 1.2em;
-    line-height: 1.6em;
     border: 1px solid var(--border-color);
-    padding: 20px;
+    font-family: var(--font-mono);
+    padding: 20px 40px 20px 30px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    width: fit-content;
 }
 .topic{
     font-family: 2rem !important;
