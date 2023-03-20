@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form cadastro</title>
+<link rel="icon" href="../resources/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+<script src="../resources/__config.js"></script>
+<style>
+.gridForm {
+    display: inline-grid;
+    font-size: 1.5rem;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.gridForm label{
+    text-align: right;
+}
+input, button, select, textarea{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.gridForm input {
+    line-height: 1.5em;
+    width: 400px;
+}
+input[type='radio'], input[type='checkbox'] {
+    width: max-content;
+    transform: scale(1.5);
+}
+select {
+    /* zoom: 1.1; */
+}
+.gridForm button{
+    grid-column: 2 / 3;
+    justify-self: flex-start;
+}
+.grupo label{
+    margin-right: 20px;
+}
+</style>
+</head>
+<body>
+<a class="index" href="index.html">index</a>
+<span id="path"></span>
+
+<div class="title code">
+    <h1>Cadastro usuário 2</h1>
+    <span class='topic'>form</span>
+</div>
+
+<form class="gridForm">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="off" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="user@example.org" autocomplete="off">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="6 caracteres" autocomplete="off">
+
+    <label>Praticou algum esporte</label>
+    <div class="grupo">
+        <input type="checkbox" id="futebol" name="esportes" value="futebol">
+        <label for="futebol">Futebol</label>
+
+        <input type="checkbox" id="natacao" name="esportes" value="natacao">
+        <label for="natacao">Natação</label>
+
+        <input type="checkbox" id="ciclismo" name="esportes" value="ciclismo">
+        <label for="ciclismo">Ciclismo</label>
+    </div>
+
+    <label for="curso">Curso</label>
+    <select id="curso" name="curso" required>
+        <option value="">--Selecione--</option>
+        <option value="1">Análise e Desenvolvimento de Sistemas</option>
+        <option value="2">Física</option>
+        <option value="3">Matemática</option>
+    </select>
+
+    <label>Turno</label>
+    <div class="grupo">
+        <input type="radio" id="manha" name="turno" value="manha">
+        <label for="manha">Tarde</label>
+
+        <input type="radio" id="noite" name="turno" value="noite">
+        <label for="noite">Noite</label>
+    </div>
+
+    <label for="motivo" style="align-self: flex-start;">Motivo contato</label>
+    <textarea name="motivo" id="motivo" cols="30" rows="10"></textarea>
+
+    <button>enviar</button>
+</form>
+
+</body>
+</html>
