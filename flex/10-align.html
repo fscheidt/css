@@ -19,9 +19,11 @@ p{
     gap: 10px; 
 }
 .AlignCenter{
-    align-items: center; /* <----- centraliza na vertical */
+    /* centraliza na vertical */
+    align-items: center; 
 }
 .AlignTop{
+    /* centraliza com o topo (inicio) do container flex */
     align-items: flex-start;
 }
 .AlignBottom{
@@ -32,7 +34,10 @@ p{
 <body>
 <a class="index" href="index.html">index</a>
 
-<h1 class="code">align-items</h1>
+<div class="title code">
+    <h1>align-items</h1>
+    <span class='topic code'>flex</span>
+</div>
 
 <h2>(1) container <u>flex</u> sem alinhamento</h2>
 <div class="container">
