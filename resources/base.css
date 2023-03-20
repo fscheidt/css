@@ -1,88 +1,93 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Archivo+Narrow&family=Inconsolata&family=JetBrains+Mono&family=Noto+Sans&display=swap');
+:root {
     --border-color: darkcyan;
     --bg-color: indigo;
     --text-color: white;
     --a-color: navy;
     --a-empty-color: rgb(152, 71, 71);
-    --font-mono: 'JetBrains mono';
+    --font-mono: 'JetBrains Mono';
+    --font-sans: 'Albert Sans';
     --topic-color: rgb(104, 104, 104);
 }
-body{
+body {
     padding: 10px;
+    font-family: var(--font-sans);
 }
-.code, .c{
+.code, .c {
     font-family: var(--font-mono);
 }
-.title{
+.title {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-pre{
+pre {
     border: 1px solid var(--border-color);
     font-family: var(--font-mono);
-    padding: 20px 40px 20px 30px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.6em;
     width: fit-content;
 }
-.topic{
+pre code {
+    padding: 0px 40px 20px 30px !important;
+}
+.topic {
     font-family: 2rem !important;
     border: 1px solid var(--topic-color);
     padding: 4px 8px;
     font-weight: bold;
     border-radius: 3px;
 }
-.topic.flex{
+.topic.flex {
     color: indigo;
     border-color: indigo;
 }
-.logo{
+.nav {
+    font-size: 28px;
+    display: inline-grid;
+    grid-template-columns: max-content;    
+    gap: 25px;
+}
+ol {
+    list-style: upper-roman;
+}
+#path {
+    color: darkgray;
+    font-family: var(--font-mono);
+}
+.logo {
     background-image: url('imgs/gh.png');
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
-a.logo{
+a.logo {
     display: inline-block;
     width: 24px;
     height: 24px;
     float: right;
 }
-.nav{
-    font-size: 28px;
-    display: inline-grid;
-    grid-template-columns: max-content;    
-    gap: 10px;
-}
-ol{
-    list-style: upper-roman;
-}
-#path{
-    color: darkgray;
-    font-family: var(--font-mono);
-}
-.nav a{
-    padding: 10px 0px;
-}
-.nav a:hover{
-    background-color: rgba(230, 245, 240, 0.455);
-}
-a{
+a {
     color: var(--a-color);
     text-decoration: none;
 }
-a.index{
+a[href="#"] {
+    color: var(--a-empty-color);
+}
+a.index {
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'ubuntu';
 }
-a.index::before{
+a.index::before {
     content: '▲ ';
 }
 a.ext::before{
     content: '➥ ';
 }
-a[href="#"]{
-    color: var(--a-empty-color);
+.nav a {
+    padding: 10px 0px;
+}
+.nav a:hover {
+    background-color: rgba(230, 245, 240, 0.455);
 }
