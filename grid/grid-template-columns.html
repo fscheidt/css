@@ -7,18 +7,7 @@
 <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
 <script src="../resources/__config.js"></script>
 <style>
-p{
-    background-color: indigo;
-    color: var(--text-color);
-    padding: 20px;
-    width: 250px;
-}
-.container{
-    background-color: var(--bg-container);
-    padding: 10px;
-    font-size: 22px;
-    gap: 10px; 
-}
+
 .Fixed3Columns{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -26,21 +15,30 @@ p{
 }
 </style>
 </head>
+
 <body>
-<a class="index" href="index.html">index</a>
-<span id="path"></span>
+<main>
+    <nav>
+        <a class="i" href="index.html">index</a>
+        <span id="path"></span>
+    </nav>
 
-<div class="title code">
-    <h1>grid-template-columns</h1>
-    <span class='topic'>grid</span>
-</div>
+    <header>
+        <h1 id="title">grid-template-columns</h1>
+        <span class='topic c'>grid</span>
+    </header>
 
-<h2><b class="c">grid-template-columns + justify-items</b></h2>
-<div class="container Fixed3Columns">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+    <section>  
+
+        <h2><b class="c">grid-template-columns + justify-items</b></h2>
+        <div class="container Fixed3Columns">
+            <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+            <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+            <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+    </section>
+</main>
+<footer>---</footer>
 
 </body>
 </html>

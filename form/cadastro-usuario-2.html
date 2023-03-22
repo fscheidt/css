@@ -56,21 +56,21 @@ select {
     <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="off" required>
 
     <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="user@example.org" autocomplete="off">
+    <input type="text" id="email" name="email" placeholder="user@example.org" autocomplete="off" required>
 
     <label for="password">Password</label>
     <input type="password" id="password" name="password" placeholder="6 caracteres" autocomplete="off">
 
-    <label>Praticou algum esporte</label>
+    <label class="brake">Conhecimento em programação</label>
     <div class="grupo">
-        <input type="checkbox" id="futebol" name="esportes" value="futebol">
-        <label for="futebol">Futebol</label>
+        <input type="checkbox" id="javascript" name="linguagem" value="JavaScript">
+        <label for="javascript">JavaScript</label>
 
-        <input type="checkbox" id="natacao" name="esportes" value="natacao">
-        <label for="natacao">Natação</label>
+        <input type="checkbox" id="java" name="linguagem" value="Java">
+        <label for="java">Java</label>
 
-        <input type="checkbox" id="ciclismo" name="esportes" value="ciclismo">
-        <label for="ciclismo">Ciclismo</label>
+        <input type="checkbox" id="php" name="php" value="PHP">
+        <label for="php">PHP</label>
     </div>
 
     <label for="curso">Curso</label>
@@ -90,7 +90,7 @@ select {
         <label for="noite">Noite</label>
     </div>
 
-    <label for="motivo" style="align-self: flex-start;">Motivo contato</label>
+    <label for="motivo" style="align-self: flex-start;">Motivo matrícula</label>
     <textarea name="motivo" id="motivo" cols="30" rows="10"></textarea>
 
     <button>enviar</button>
