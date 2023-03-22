@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <script src="../resources/__config.js"></script>
+  <script>    
+    window.onload = function(e) {
+      let input1 = document.querySelector('#input1');
+      let input2 = document.querySelector('#input2');
+      let btnSomar = document.querySelector('#somar');
+      let divRes = document.querySelector('#resultado');
+      
+      btnSomar.addEventListener('click', e => {
+        divRes.innerHTML = Number(input1.value) + Number(input2.value);
+      });
+    };
+  </script>
+  <style>
+    input, button{
+      width: 100px;
+      line-height: 2rem;
+      font-size: 1.5rem;
+    }
+    #resultado::before{
+      content: 'Resultado: ';
+    }
+    #resultado{
+      padding: 20px 0px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
+
+    <header class="main">
+      <h1 class="title">somar valores</h1>
+      <span class="topic c">JS</span>
+    </header>
+
+    <div class="contents">
+      <section>
+        <header>
+          <button class="showCode">show code</button>
+        </header>
+        <div class="wrapper">
+          <input id="input1" type="number" placeholder="valor1" value="7">
+          <input id="input2" type="number" placeholder="valor2" value="3">
+          <button id="somar">somar</button>
+          
+          <div id="resultado"></div>
+        </div>
+        <div class="source css">this code can be hidden</div>
+      </section>
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
+
+</body>
+</html>

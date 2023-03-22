@@ -6,17 +6,20 @@
   <link rel="icon" href="../resources/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
   <script src="../resources/__config.js"></script>
+  <script>    
+    window.addEventListener('mouseover', function(e) {
+      let el = e.target;
+      if (el.id === 'area') {
+        el.style.backgroundColor = 'red';
+      }
+    });
+  </script>
   <style>
-  .Fixed3Columns{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
+
   </style>
 </head>
 
 <body>
-
   <main>
     <nav>
       <a class="i" href="index.html">index</a>
@@ -24,31 +27,27 @@
     </nav>
 
     <header class="main">
-      <h1 class="title">grid-template-columns</h1>
-      <span class="topic c">grid</span>
+      <h1 class="title">mouse over</h1>
+      <span class="topic c">JS</span>
     </header>
 
     <div class="contents">
-
       <section>
         <header>
-          <h2>
-            <code>grid-template-columns + justify-items</code>
-          </h2>
-          <button class="showCode">show css</button>
+          <h2>change <code>p#area</code> backgroundColor</h2>
+          <button class="showCode">show code</button>
         </header>
-
-        <div class="container Fixed3Columns">
-          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+        <div class="container">
+          <p id="area" class="card">
+            <code>p#area</code><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
           <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
           <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
         </div>
-
-        <div class="source css">code goes here</div>
-
+        <div class="source css">this code can be hidden</div>
       </section>
+    </div> <!-- close contents -->
 
-    </div>
   </main>
 
   <footer>---</footer>

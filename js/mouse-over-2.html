@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <script src="../resources/__config.js"></script>
+  <script>    
+    window.onload = () => {
+      let area = document.querySelector('#area');
+      let area2 = document.querySelector('#area2');
+
+      area.addEventListener('mouseover', e => {
+        e.target.style.backgroundColor = 'red';
+      });
+
+      area2.addEventListener('mouseover', e => {
+        e.target.style.backgroundColor = 'darkred';
+      });
+
+      area2.addEventListener('mouseleave', e => {
+        e.target.style.backgroundColor = 'indigo';
+      });
+    };
+  </script>
+  <style>
+    #area {
+      width: 350px;
+    }
+    #area2 {
+      width: 600px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
+
+    <header class="main">
+      <h1 class="title">mouse over 2</h1>
+      <span class="topic c">JS</span>
+    </header>
+
+    <div class="contents">
+      <section>
+        <header>
+          <button class="showCode">show code</button>
+        </header>
+        <div class="container">
+          <p id="area" class="card">
+            #area<br>
+            change backgroundColor
+          </p>
+
+          <p id="area2" class="card">
+            #area2<br>
+            change backgroundColor and restore
+          </p>
+
+        </div>
+        <div class="source css">this code can be hidden</div>
+      </section>
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
+
+</body>
+</html>
