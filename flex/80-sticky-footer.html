@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>fixed-footer</title>
-<link rel="icon" href="../resources/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
-<script src="../resources/__config.js"></script>
+  <meta charset="UTF-8">
+  <title>fixed-footer</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <script src="../resources/__config.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 
-<style>
+  <style></style>
 
-</style>
 </head>
+
 <body>
-<a class="index" href="index.html">index</a>
-<span id="path"></span>
+  <main>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
 
-<div class="title code">
-    <h1>fixed footer</h1>
-    <span class='topic flex code'>flex</span>
-</div>
+    <header class="main">
+      <h1 class="title">fixed footer layout</h1>
+      <span class="topic c">flex</span>
+    </header>
 
+    <div class="contents">
+      <section>
+        <header>
+          <h2>             
+            <code>flex: 1 0 auto;</code>
+          </h2>
+          <button class="showCss">show css</button>
+        </header>
 
-<h2>(1) <b class='code'>flex:1 0 auto</b></h2>
-
-<pre><code class="language-css">
+        <pre><code class="language-css">
 html, body{
     margin: 0;
     padding: 0;
@@ -47,7 +56,14 @@ body{
 .footer{
     padding: 1.0rem;
 }
-</code></pre>
+        </code></pre>
 
+      </section>
+
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
 </body>
 </html>
