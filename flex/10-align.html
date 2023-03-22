@@ -7,19 +7,6 @@
 <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
 <script src="../resources/__config.js"></script>
 <style>
-p{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 20px;
-    width: 250px;
-}
-.container{
-    background-color: var(--bg-container);
-    padding: 10px;
-    font-size: 22px;
-    display: flex;
-    gap: 10px; 
-}
 .AlignCenter{
     /* centraliza na vertical */
     align-items: center; 
@@ -34,41 +21,71 @@ p{
 </style>
 </head>
 <body>
-<a class="index" href="index.html">index</a>
-<span id="path"></span>
+  <main>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
 
-<div class="title code">
-    <h1>align-items</h1>
-    <span class='topic flex code'>flex</span>
-</div>
+    <header class="main">
+      <h1 class="title">align-items</h1>
+      <span class="topic c">flex</span>
+    </header>
 
-<h2>(1) container <u>flex</u> sem alinhamento</h2>
-<div class="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+    <div class="contents">
+      <section>
+        <header>
+          <h2>(1) container <u>flex</u> sem alinhamento</h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container">
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
 
-<h2>(2) container com align <u>center</u></h2>
-<div class="container AlignCenter">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+      <section>
+        <header>
+          <h2>(2) container com align <u>center</u></h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container AlignCenter">
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
 
-<h2>(3) align top - <u>flex-start</u></h2>
-<div class="container AlignTop">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+      <section>
+        <header>
+          <h2>(3) align top - <u>flex-start</u></h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container AlignTop">
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
 
-<h2>(4) align bottom- <u>flex-end</u></h2>
-<div class="container AlignBottom">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+      <section>
+        <header>
+          <h2>(4) align bottom- <u>flex-end</u></h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container AlignBottom">
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
+
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
 
 </body>
 </html>
