@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>flex-grow</title>
-<link rel="icon" href="../resources/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
-<script src="../resources/__config.js"></script>
-<style>
-#content {
-  display: flex;
-}
-#content div{
-    padding: 20px 0px;
-    border: 3px solid rgba(0, 0, 0, 0.2);
-}
-.box0 {
-  flex-grow: 0.5;
-  background-color:lightyellow;
-}
-.box1 {
-  flex-grow: 1;
-  background-color:lightblue;
-}
-.box2 {
-  flex-grow: 2;
-  background-color:lightgreen;
-}
-</style>
+  <head>
+    <meta charset="UTF-8">
+    <title>flex-grow</title>
+    <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+    <script src="../resources/__config.js"></script>
+    <style>
+    #content {
+      display: flex;
+    }
+    #content div{
+        padding: 20px 0px;
+        border: 3px solid rgba(0, 0, 0, 0.2);
+    }
+    .box0 {
+      flex-grow: 0.5;
+      background-color:lightyellow;
+    }
+    .box1 {
+      flex-grow: 1;
+      background-color:lightblue;
+    }
+    .box2 {
+      flex-grow: 2;
+      background-color:lightgreen;
+    }
+  </style>
 </head>
 <body>
-<a class="index" href="index.html">index</a>
-<span id="path"></span>
+  <body>
+    <main>
+      <nav>
+        <a class="i" href="index.html">index</a>
+        <span id="path"></span>
+      </nav>
+  
+      <header class="main">
+        <h1 class="title">flex-grow</h1>
+        <span class="topic c">flex</span>
+      </header>
+  
+      <div class="contents">
+        <section>
+        <p>
+            The flex-grow CSS property sets the flex grow factor of a flex item's main size.
+            <a class="ext" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank">mdn</a>.
+        </p>
 
-<div class="title code">
-    <h1>flex-grow</h1>
-    <span class='topic flex code'>flex</span>
-</div>
+        <div id="content">
+          <div class="box0">A</div>
+          <div class="box1">B</div>
+          <div class="box2">C</div>
+        </div>
+      </section>
 
-<p>
-    The flex-grow CSS property sets the flex grow factor of a flex item's main size.
-    <a class="ext" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank">mdn</a>.
-</p>
+    </div> <!-- close contents -->
 
-<div id="content">
-  <div class="box0">A</div>
-  <div class="box1">B</div>
-  <div class="box2">C</div>
-</div>
+  </main>
+
+  <footer>---</footer>
 
 </body>
 </html>

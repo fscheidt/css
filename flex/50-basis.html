@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>flex-basis</title>
-<link rel="icon" href="../resources/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
-<script src="../resources/__config.js"></script>
-<style>
+  <head>
+    <meta charset="UTF-8">
+    <title>flex-grow</title>
+    <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+    <script src="../resources/__config.js"></script>
+    <style>
     #content {
-        display: flex;
+      display: flex;
     }
     #content div{
         padding: 20px 0px;
@@ -26,29 +25,41 @@
         flex-basis: auto;
         background-color:lightgreen;
     }
-</style>
+  </style>
 </head>
-
 <body>
-<a class="index" href="index.html">index</a>
-<span id="path"></span>
+  <body>
+    <main>
+      <nav>
+        <a class="i" href="index.html">index</a>
+        <span id="path"></span>
+      </nav>
+  
+      <header class="main">
+        <h1 class="title">flex-basis</h1>
+        <span class="topic c">flex</span>
+      </header>
+  
+      <div class="contents">
+        <section>
+          <p>
+            The flex-basis CSS property sets the initial main size of a flex item. 
+            It sets the size of the content box unless otherwise set with box-sizing.
+            <a class="ext" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">mdn</a>.
+        </p>
 
-<div class="title code">
-    <h1>flex-basis</h1>
-    <span class='topic flex code'>flex</span>
-</div>
+        <div id="content">
+          <div class="box0">A</div>
+          <div class="box1">B</div>
+          <div class="box2">C</div>
+        </div>
+      </section>
 
-<p>
-    The flex-basis CSS property sets the initial main size of a flex item. 
-    It sets the size of the content box unless otherwise set with box-sizing.
-    <a class="ext" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">mdn</a>.
-</p>
+    </div> <!-- close contents -->
 
-<div id="content">
-  <div class="box0">A</div>
-  <div class="box1">B</div>
-  <div class="box2">C</div>
-</div>
+  </main>
+
+  <footer>---</footer>
 
 </body>
 </html>

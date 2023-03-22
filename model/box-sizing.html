@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CSS</title>
-<link rel="icon" href="../resources/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
-<script src="../resources/__config.js"></script>
+  <meta charset="UTF-8">
+  <title>Template</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <script src="../resources/__config.js"></script>
+  <style>
+
+  </style>
 </head>
+
 <body>
-    <main>
+  <main>
+    <nav>
+      <a class="i" href="../index.html">index</a>
+      <span id="path"></span>
+    </nav>
+
+    <header class="main">
+      <h1 class="title">box-sizing</h1>
+      <span class="topic c">css</span>
+    </header>
+
+    <div class="contents">
+      <section>
         <header>
-            <a class="index" href="../../index.html">home</a>
-            <a class="index" href="../index.html">index</a>
-            <span id="path"></span>
+          <h2>border-box</h2>
+          <button class="showCss">show css</button>
         </header>
-
-        <div class="title code">
-            <h1 id="title">main title</h1>
-            <span class='topic code'>topic</span>
+        <div class="container">
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
         </div>
+        <div class="source css">this code can be hidden</div>
+      </section>
+    </div> <!-- close contents -->
 
-        <section>
-            <h2>box-sizing</h2>
+  </main>
 
-        </section>
+  <footer>---</footer>
 
-
-    </main>
-
-    <footer>footer</footer>
 </body>
 </html>

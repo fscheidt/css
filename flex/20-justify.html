@@ -2,24 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>justify-content</title>
+<title>align-items</title>
 <link rel="icon" href="../resources/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
 <script src="../resources/__config.js"></script>
 <style>
-p{
-    background-color: indigo;
-    color: var(--text-color);
-    padding: 20px;
-    width: 220px;
-}
-.content{
-    background-color: var(--bg-container);
-    padding: 10px;
-    font-size: 22px;
-    display: flex;
-    gap: 10px;  
-}
 .Center{
     justify-content: center;
 }
@@ -29,27 +16,47 @@ p{
 </style>
 </head>
 <body>
-<a class="index" href="index.html">index</a>
-<span id="path"></span>
+  <main>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
 
-<div class="title code">
-    <h1>justify-content</h1>
-    <span class='topic flex code'>flex</span>
-</div>
+    <header class="main">
+      <h1 class="title">justify-content</h1>
+      <span class="topic c">flex</span>
+    </header>
 
-<h2>(I) <b class='code'>justify-content: center</b></h2>
-<div class="content Center">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+    <div class="contents">
+      <section>
+        <header>
+          <h2>(I) <b class="code">justify-content: center</b></h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container Center">
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
 
-<h2>(II) <b class='code'>justify-content: flex-end</b></h2>
-<div class="content End">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p>Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+      <section>
+        <header>
+          <h2>(II) <b class="code">justify-content: flex-end</b></h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container End">
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
+
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
 
 </body>
 </html>

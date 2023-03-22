@@ -2,29 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>direction</title>
+<title>align-items</title>
 <link rel="icon" href="../resources/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
 <script src="../resources/__config.js"></script>
 <style>
-p{
-    background-color: indigo;
-    color: var(--text-color);
-    padding: 20px;
-    width: 250px;
-}
 p.a{
     background-color: rgb(246, 113, 113);
 }
 p.b{
     background-color: rgb(110, 193, 184);
-}
-.container{
-    background-color: var(--bg-container);
-    padding: 10px;
-    font-size: 22px;
-    display: flex;
-    gap: 10px; 
 }
 .Column{
     flex-direction: column;
@@ -33,38 +20,66 @@ p.b{
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
-
 </style>
 </head>
 <body>
-<a class="index" href="index.html">index</a>
-<span id="path"></span>
+  <main>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
 
-<div class="title code">
-    <h1>direction</h1>
-    <span class='topic flex code'>flex</span>
-</div>
+    <header class="main">
+      <h1 class="title">direction</h1>
+      <span class="topic c">flex</span>
+    </header>
 
-<h2>(1) container <u>flex</u> padrão</h2>
-<div class="container">
-    <p class="a">[a] Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p class="b">[b] Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>[c] Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+    <div class="contents">
+      <section>
+        <header>
+          <h2>(1) container <u>flex</u> padrão</h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container">
+            <p class="card a">[a] Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+            <p class="card b">[b] Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+            <p class="card">[c] Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
 
-<h2>(2) <b class='code'>flex-direction:row-reverse + justify-content:flex-end</b></h2>
-<div class="container RowReverse">
-    <p class="a">[a] Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p class="b">[b] Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>[c] Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+      <section>
+        <header>
+          <h2>(2)
+            <code>flex-direction:row-reverse + justify-content:flex-end</code>
+          </h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container RowReverse">
+          <p class="card a">[a] Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card b">[b] Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">[c] Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
+      
+      <section>
+        <header>
+          <h2>(3)
+            <code>flex-direction:column</code>
+          </h2>
+          <button class="showCss">show css</button>
+        </header>
+        <div class="container Column">
+            <p class="card a">[a] Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+            <p class="card b">[b] Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+            <p class="card">[c] Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+      </section>
 
-<h2>(2) <b class='code'>flex-direction:column</b></h2>
-<div class="container Column">
-    <p class="a">[a] Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-    <p class="b">[b] Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
-    <p>[c] Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
-</div>
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
 
 </body>
 </html>
