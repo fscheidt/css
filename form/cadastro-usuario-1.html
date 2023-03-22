@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <link rel="stylesheet" type="text/css" href="forms.css"/>
+  <script src="../resources/__config.js"></script>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
+
+    <header class="main">
+      <h1 class="title">Cadastro usuário basico</h1>
+      <span class="topic c">form</span>
+    </header>
+
+    <div class="contents">
+      <section>
+        <form class="gridForm">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="off" required>
+      
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="user@example.org" autocomplete="off">
+      
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="6 caracteres" autocomplete="off">
+      
+          <button>enviar</button>
+        </form>
+      </section>
+    </div>
+
+  </main>
+  <footer>---</footer>
+</body>
+</html>
