@@ -20,7 +20,7 @@
   --pad-y: 1rem;
   --pad-x: 1rem;
 }
-
+/* ------- tags HTML ------- */
 html,
 body {
   margin: 0;
@@ -47,12 +47,37 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
+p {
+  line-height: 1.5em;
+}
+h1{
+  font-size: 1.6rem;
+}
 main {
   flex: 1 0 auto;
   padding: 20px;
 }
-
+details summary:hover{
+  cursor: pointer;
+}
+#conceitos{
+  display: inline-grid;
+  margin: 0px 30px;
+  width: max-content;
+}
+#conceitos .topic{
+  margin: 20px 0 0 0px;
+}
+#conceitos dt{
+  padding-top: 20px;;
+}
+dl{
+  margin: 0;
+  padding: 0;
+}
+#conceitos dt{
+  font-weight: bold;
+}
 nav {
   font-family: var(--font-mono-2);
   /* background-color: var(--bg-nav); */
@@ -83,10 +108,17 @@ pre {
   line-height: 1.6em;
   width: fit-content;
 }
-
+code {
+  font-family: var(--font-mono-2);
+  background-color: rgb(230, 251, 250);
+  border-radius: 3px;
+  padding: 1px 2px;
+}
 pre code {
   padding: 0px 40px 20px 30px !important;
 }
+
+/* ------- classes ------- */
 
 .container {
   background-color: #ccc;
@@ -109,7 +141,7 @@ pre code {
 }
 
 .topic {
-  font-family: 2rem !important;
+  
   border: 1px solid var(--topic-color);
   padding: 4px 8px;
   font-weight: bold;
@@ -142,7 +174,7 @@ pre code {
   font-family: var(--font-mono);
   /* display: none; */
 }
-button.showCode {
+.showCode {
   font-family: var(--font-mono);
   display: none;
 }

@@ -6,7 +6,28 @@
   <link rel="icon" href="../resources/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
   <script src="../resources/__config.js"></script>
-  <style></style>
+  <style>
+    .box {
+      width: 300px;
+      height: 100px;
+      background-color: #ccc;
+      border: 10px solid indigo;
+      padding: 10px;
+    }
+    .bb {
+      box-sizing: border-box;
+    }
+    .box code{
+      display: block;
+      background-color: initial;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      document.getElementById('box1').innerHTML += document.querySelector('.box').offsetWidth + 'px';
+      document.getElementById('box2').innerHTML += document.querySelector('.bb').offsetWidth + 'px';
+    }
+  </script>
 </head>
 
 <body>
@@ -15,23 +36,42 @@
       <a class="i" href="../index.html">index</a>
       <span id="path"></span>
     </nav>
-
     <header class="main">
       <h1 class="title">box-sizing</h1>
       <span class="topic c">css</span>
     </header>
-
+    
     <div class="contents">
       <section>
-        <header>
-          <h2>border-box</h2>
-          <button class="showCode">show css</button>
-        </header>
-        <div class="container">
-          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
-        </div>
-        <div class="source css">this code can be hidden</div>
+        <p>No modelo "box-model" do CSS o tamanho final que um elemento ocupa de espaço de template
+          será a sua largura mais o espaço de padding e border.</p>
+
+        A propriedade <code>box-sizing</code> permite alterar esse calculo para considerar
+        apenas o tamanho do conteúdo do elemento ao incorporar o espaço do padding e border no conteúdo do elemento.
+        </p>
+
       </section>
+      
+      <section>
+        
+        <h2>padrão: content-box</h2>
+        <div class="box">
+          <code>width: 300px;</code>
+          <code>box-sizing: content-box</code>
+          <span id="box1">width real: </span>
+        </div>
+        
+        <p></p>
+        
+        <h2>com <code>border-box</code></h2>
+        <div class="box bb">
+          <code>width: 300px;</code>
+          <code>box-sizing: border-box</code>
+          <span id="box2">width real: </span>
+        </div>
+
+      </section>
+
     </div> <!-- close contents -->
 
   </main>
