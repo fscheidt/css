@@ -6,6 +6,10 @@
 <link rel="icon" href="../resources/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
 <script src="../resources/__config.js"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+<script>hljs.highlightAll();</script>
 <style></style>
 </head>
 
@@ -22,17 +26,81 @@
     </header>
 
     <div class="contents">
-      <section>
+
+      <section style="margin-top:40px;">
         <ol class="nav">
             <li><a href="cadastro-usuario-1.html">Cadastro Usuário básico</a></li>
             <li><a href="cadastro-usuario-2.html">Cadastro Usuário completo</a></li>
         </ol>
       </section>
+
+      <section>
+          <header>
+            <h2>Snippets slides</h2>
+          </header>
+
+          <details class="snippet">
+            <summary>Form</summary>
+
+<pre><code class="sample language-html">  
+<form>            
+  Email: <input type="text" name="email" />
+  <button>enviar</button>
+</form>
+
+</code></pre>
+
+          <div class="sample-result"></div>
+            
+          </details>
+
+
+          <details class="snippet">
+            <summary>Form attributes</summary>
+<pre><code class="sample language-html">  
+<form action="/endpoint" method="POST">
+  <!-- inputs do formulario -->
+  <button>enviar</button>
+</form>
+
+</code></pre>
+          <div class="sample-result"></div>
+          </details>
+
+
+          <details class="snippet" open>
+            <summary>Input types</summary>
+<pre><code class="sample language-html">  
+<form class="grid">
+  <label>Nome</label>
+  <input type="text" name="nome" />
+  <label>Peso</label>
+  <input type="number" name="peso" />
+</form>
+
+</code></pre>
+          <div class="sample-result"></div>
+          </details>
+
+
+      </section>
+
+      
     </div> <!-- close contents -->
 
   </main>
 
   <footer>---</footer>
+  <script>
+    document.querySelectorAll(".snippet").forEach(function(el) {
+      let codeEl = el.querySelector("code.sample");
+      let sampleResultEl = el.querySelector(".sample-result");
+      sampleResultEl.innerHTML = codeEl.innerHTML;
+    });
+    document.querySelectorAll("code").forEach(function(element) {
+    element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  });
+  </script>
 
 </body>
 </html>

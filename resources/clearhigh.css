@@ -1,0 +1,81 @@
+pre code.hljs {
+  display: block;
+  line-height: 1.8em;
+  overflow-x: auto;
+  padding: 0;
+  /* font-family: "JetBrains mono"; */
+  /* font-family: "Inconsolata"; */
+  font-family: "BlexMono Nerd Font";
+  background-color: white !important;
+}
+.hljs{
+}
+code.hljs {
+  /* padding: 3px 5px; */
+  outline: none;
+}
+
+.hljs {
+  background-color: #f4f4f4;
+  color: #000000;
+}
+
+.hljs-subst {
+  color: #000;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-title,
+.hljs-variable {
+  color: #050;
+}
+.hljs-string {
+  color: rgb(16, 115, 16);
+}
+/* atributo tab */
+.hljs-attr{
+  color: #3333be;
+  font-style: italic;
+}
+.hljs-comment,
+.hljs-quote {
+  color: #777777;
+}
+
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-regexp,
+.hljs-type {
+  color: #800;
+}
+
+.hljs-deletion,
+.hljs-meta {
+  color: #00e;
+}
+
+.hljs-built_in,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-tag,
+.hljs-title {
+  font-weight: 700;
+  color: #2727eb;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
+}

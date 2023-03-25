@@ -9,23 +9,27 @@
   <style>
     .box {
       width: 300px;
-      height: 100px;
-      background-color: #ccc;
+      height: 140px;
+      background-color: #f4fda8;
       border: 10px solid indigo;
       padding: 10px;
+    }
+    .box > * {
+      display: block;
+    }
+    .box code{
+      background-color: initial;
     }
     .bb {
       box-sizing: border-box;
     }
-    .box code{
-      display: block;
-      background-color: initial;
-    }
   </style>
   <script>
     window.onload = function() {
-      document.getElementById('box1').innerHTML += document.querySelector('.box').offsetWidth + 'px';
-      document.getElementById('box2').innerHTML += document.querySelector('.bb').offsetWidth + 'px';
+      document.querySelector('#box1w').innerHTML += document.querySelector('.box').offsetWidth + 'px';
+      document.querySelector('#box1h').innerHTML += document.querySelector('.box').offsetHeight + 'px';
+      document.querySelector('#box2w').innerHTML += document.querySelector('.bb').offsetWidth + 'px';
+      document.querySelector('#box2h').innerHTML += document.querySelector('.bb').offsetHeight + 'px';
     }
   </script>
 </head>
@@ -43,11 +47,12 @@
     
     <div class="contents">
       <section>
-        <p>No modelo "box-model" do CSS o tamanho final que um elemento ocupa de espaço de template
-          será a sua largura mais o espaço de padding e border.</p>
+        <p>No modelo "box-model" do CSS o tamanho <b>real</b> que um elemento possui 
+          consiste na soma do espaço de seu conteúdo + padding + border.</p>
 
-        A propriedade <code>box-sizing</code> permite alterar esse calculo para considerar
-        apenas o tamanho do conteúdo do elemento ao incorporar o espaço do padding e border no conteúdo do elemento.
+        A propriedade <code>box-sizing</code> permite alterar esse calculo 
+        para incorporar o padding e border no tamanho do elemento. No exemplo abaixo,
+        vemos que o width da primeira box é 340px, enquanto o da segunda é 300px.
         </p>
 
       </section>
@@ -58,7 +63,8 @@
         <div class="box">
           <code>width: 300px;</code>
           <code>box-sizing: content-box</code>
-          <span id="box1">width real: </span>
+          <span id="box1w">width real: </span>
+          <span id="box1h">height real: </span>
         </div>
         
         <p></p>
@@ -67,7 +73,8 @@
         <div class="box bb">
           <code>width: 300px;</code>
           <code>box-sizing: border-box</code>
-          <span id="box2">width real: </span>
+          <span id="box2w">width real: </span>
+          <span id="box2h">height real: </span>
         </div>
 
       </section>
