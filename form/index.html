@@ -68,7 +68,8 @@
           </details>
 
 
-          <details class="snippet" open>
+          <!-- ******* SNIPPET ********** -->
+          <details class="snippet">
             <summary>Input types</summary>
 <pre><code class="sample language-html">  
 <form class="grid">
@@ -81,6 +82,108 @@
 </code></pre>
           <div class="sample-result"></div>
           </details>
+
+
+
+          <!-- ******* SNIPPET ********** -->
+          <details class="snippet" open>
+            <summary>Validação</summary>
+  <pre><code class="sample language-html">  
+<form class="grid">
+  <label>Cidade</label>
+  <input type="text" name="nome" minlength="3" />     
+  <label>Estado</label>
+  <input type="text" name="estado" maxlength="2" />     
+</form>
+  </code></pre>
+            <div class="sample-result"></div>
+            </details>
+
+
+
+
+          <!-- ******* SNIPPET ********** -->
+          <details class="snippet">
+          <summary>Radio</summary>
+<pre><code class="sample language-html">  
+<form class="grid1">
+  <h2>Qualidade do serviço?</h2>
+  <label>
+    <input type="radio" name="pesquisa" value="3" /> 
+    Excelente
+  </label>
+  <label>
+    <input type="radio" name="pesquisa" value="2"/> 
+    Bom
+  </label>
+  <label>
+    <input type="radio" name="pesquisa" value="1"/> 
+    Péssimo
+  </label>
+</form>
+
+</code></pre>
+          <div class="sample-result"></div>
+          </details>
+
+
+
+          <!-- ******* SNIPPET ********** -->
+          <details class="snippet" open>
+            <summary>Checkbox</summary>
+  <pre><code class="sample language-html">  
+  <form>
+    <h2>Tipos de séries favoritas</h2>
+    <label>
+      <input type="checkbox" name="favoritos" value="1" /> 
+      Aventura
+    </label>
+    <label>
+      <input type="checkbox" name="favoritos" value="2"/> 
+      Drama
+    </label>
+    <label>
+      <input type="checkbox" name="favoritos" value="3"/> 
+      Ficção científica
+    </label>
+  </form>
+  
+  </code></pre>
+            <div class="sample-result"></div>
+            </details>
+
+
+        <!-- ******* SNIPPET ********** -->
+        <details class="snippet">
+          <summary>grid form</summary>
+<pre><code class="language-css">  
+.grid {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  gap: 10px;
+}
+.grid label{
+  justify-self: right;
+}
+</code></pre>
+
+<div class="panel" style="display: grid; grid-template-columns: 1fr 1fr;align-items: center;">
+  <pre><code class="sample language-html">
+<form class="grid">
+  <label>Nome</label>
+  <input type="text" name="nome" />
+  <label>CPF</label>
+  <input type="text" name="cpf" />
+  <label>Endereço</label>
+  <input type="text" name="endereco" />
+</form>
+  
+  </code></pre>
+          <div class="sample-result"></div>
+          </details>
+
+</div>
 
 
       </section>

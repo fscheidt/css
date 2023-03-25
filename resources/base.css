@@ -233,7 +233,15 @@ a.logo {
   height: 24px;
   float: right;
 }
-
+.grid1 {
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 10px;
+  align-items: center;
+  user-select: none;
+  box-sizing: border-box;
+  justify-items: left;
+}
 .grid {
   display: grid;
   grid-template-columns: max-content max-content;
@@ -243,19 +251,19 @@ a.logo {
   box-sizing: border-box;
 }
 .grid label{
-  text-align: right;
+  justify-self: right;
 }
-.grid input, 
-.grid button, 
-.grid textarea{
+form input, 
+form button, 
+form textarea{
   padding: 5px;
 }
-.grid select{
+form select{
   padding: 5px;
   line-height: 1.5em;
 }
-.grid input,
-.grid textarea {
+form input,
+form textarea {
   line-height: 1.5em;
 }
 input[type='radio'], 
