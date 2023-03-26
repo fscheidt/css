@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forms</title>
+<link rel="icon" href="../resources/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+<script src="../resources/__config.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+<script>hljs.highlightAll();</script>
+<style></style>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <a class="i" href="../index.html">index</a>
+      <span id="path"></span>
+    </nav>
+
+    <header class="main">
+      <h1 class="title">snippets</h1>
+      <span class="topic c">JS</span>
+    </header>
+
+    <div class="contents">
+
+      <section>
+        <header>
+          <h2>Snippets</h2>
+        </header>
+
+        <!-- ******* SNIPPET ********** -->
+        <details class="snippet">
+          <summary>Declaração variáveis</summary>
+<pre><code class="sample language-js">  
+// declara variável idade e inicializa com valor 27
+let idade = 27;
+// declara variável nome com valor "Tamara"
+let nome = "Tamara";
+// declara variavel cotacao
+let cotacao = 5.21;
+
+let idade = 27;
+// incrementa 1 ano a variavel idade
+idade = idade + 1;
+// idade++;
+
+// decrementa 1 ano
+idade = idade - 1;
+// idade--;
+
+// imprime idade:
+console.log(idade);
+
+</code></pre>
+        </details>
+
+        <details class="snippet" open>
+          <summary>prompt idade</summary>
+          <button onclick="confirmaIdade()">Solicita passaporte</button>
+        </details>
+
+
+
+      </section>
+
+
+
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
+
+  <script>
+    document.querySelectorAll("code").forEach(function(element) {
+    element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  });
+  function confirmaIdade(){
+
+    let idade = Number(prompt("Qual a sua idade?"));
+    if (idade>=18) {
+      alert("Pedido de Passaporte autorizado");
+    }
+    else {
+      alert("Passaporte não disponível");
+    }
+
+  }
+
+  function forLoop(){
+
+    let msg = "Mensagem ";
+    
+    for(let i=0; i<10; i++) {
+      console.log("Mensagem número", i);
+    }
+
+  }
+  </script>
+
+</body>
+</html>
