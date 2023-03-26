@@ -5,6 +5,7 @@
 <title>Forms</title>
 <link rel="icon" href="../resources/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="../resources/__config.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
@@ -43,11 +44,11 @@ let nome = "Tamara";
 let cotacao = 5.21;
 
 let idade = 27;
-// incrementa 1 ano a variavel idade
+// incrementa 1 ano
 idade = idade + 1;
 // idade++;
 
-// decrementa 1 ano
+// diminui 1 ano
 idade = idade - 1;
 // idade--;
 
@@ -60,6 +61,7 @@ console.log(idade);
         <details class="snippet" open>
           <summary>prompt idade</summary>
           <button onclick="confirmaIdade()">Solicita passaporte</button>
+          <button onclick="dataHoraAtual()">DataHora atual</button>
         </details>
 
 
@@ -90,6 +92,12 @@ console.log(idade);
 
   }
 
+  function dataHoraAtual(){
+
+    alert("Data e Hora: " + new Date().toLocaleString());
+
+  }
+
   function forLoop(){
 
     let msg = "Mensagem ";
@@ -100,6 +108,7 @@ console.log(idade);
 
   }
   </script>
+
 
 </body>
 </html>
