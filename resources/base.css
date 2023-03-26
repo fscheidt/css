@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Archivo+Narrow&family=Inconsolata&family=JetBrains+Mono&family=Noto+Sans&display=swap');
 
 :root {
-  --border-color: darkcyan;
+  
+  --border-color: indigo;
   --bg-color: indigo;
   --bg-footer: indigo;
   --bg-nav: indigo;
@@ -57,9 +58,7 @@ main {
   flex: 1 0 auto;
   padding: 20px;
 }
-details summary:hover{
-  cursor: pointer;
-}
+
 #conceitos{
   display: inline-grid;
   margin: 0px 30px;
@@ -114,12 +113,9 @@ pre.snippet code {
   font-family: var(--font-mono-2);
   background-color: rgb(230, 251, 250);
   border-radius: 3px;
-  /* padding: 1px 2px; */
   /* padding: 0px 40px 20px 30px !important; */
 }
-details.snippet{
-  margin: 20px 0px 30px 0px;
-}
+
 
 /* ------- classes ------- */
 
@@ -157,7 +153,7 @@ details.snippet{
 }
 
 .nav {
-  font-size: 28px;
+  font-size: 1.2rem;
   display: inline-grid;
   grid-template-columns: max-content;
   gap: 25px;
@@ -280,7 +276,6 @@ select {
   justify-self: flex-start;
 }
 .grupo{
-  /* background-color: aquamarine; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -290,4 +285,33 @@ select {
 }
 input:invalid{
   color: red;
+}
+details summary:hover{
+  cursor: pointer;
+}
+details.snippet{
+  margin: 20px 0px 30px 0px;
+}
+details.snippet summary{
+  user-select: none;
+}
+.snipGrid{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-items: left;
+  border: 2px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.col1{
+  grid-template-columns: max-content;
+  gap: 50px;
+}
+
+.col2{
+  grid-template-columns: max-content max-content;
+  gap: 50px;
 }

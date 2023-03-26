@@ -1,210 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Forms</title>
-<link rel="icon" href="../resources/favicon.ico" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../resources/base.css"/>
-<script src="../resources/__config.js"></script>
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
-<script>hljs.highlightAll();</script>
-<style></style>
+  <head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <script src="../resources/__config.js"></script>
+  <script src="../resources/utils.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+  <script>hljs.highlightAll();</script>
+  <style></style>
 </head>
 
 <body>
-  <main>
-    <nav>
-      <a class="i" href="../index.html">index</a>
-      <span id="path"></span>
-    </nav>
+<main>
+  <nav>
+    <a class="i" href="../index.html">index</a>
+    <span id="path"></span>
+  </nav>
 
-    <header class="main">
-      <h1 class="title">formulários</h1>
-      <span class="topic c">form</span>
-    </header>
+  <header class="main">
+    <h1 class="title">formulários</h1>
+    <span class="topic c">form</span>
+  </header>
 
-    <div class="contents">
+  <div class="contents">
 
-      <section style="margin-top:40px;">
-        <ol class="nav">
-            <li><a href="cadastro-usuario-1.html">Cadastro Usuário básico</a></li>
-            <li><a href="cadastro-usuario-2.html">Cadastro Usuário completo</a></li>
-        </ol>
-      </section>
+    <section>
+      <header>
+        <h2>Exemplos</h2>
+      </header>
+      <ol class="nav">
+          <li><a href="cadastro-usuario-1.html">Cadastro Usuário básico</a></li>
+          <li><a href="cadastro-usuario-2.html">Cadastro Usuário completo</a></li>
+      </ol>
+    </section>
 
-      <section>
-          <header>
-            <h2>Snippets slides</h2>
-          </header>
+<section>
+  <header>
+    <h2>Snippets slides</h2>
+    <button onclick="expand(true)">expand</button>
+    <button onclick="expand(false)">▲</button>
+  </header>
 
-          <details class="snippet">
-            <summary>Form</summary>
+<details class="snippet">
+  <summary>FORM</summary>
+  <div class="snipGrid col2">
+    <pre><code class="sample language-html">
+    <!-- Definição de um form html básico -->
+    <form>
+      Email: <input type="text" name="email" />
+      <button>enviar</button>
+    </form>
+    </code></pre>
 
-<pre><code class="sample language-html">  
-<form>            
-  Email: <input type="text" name="email" />
-  <button>enviar</button>
-</form>
+    <div class="sample-result"></div>
+  </div>
+</details>
 
-</code></pre>
-
-          <div class="sample-result"></div>
-            
-          </details>
-
-
-          <details class="snippet">
-            <summary>Form attributes</summary>
-<pre><code class="sample language-html">  
-<form action="/endpoint" method="POST">
-  <!-- inputs do formulario -->
-  <button>enviar</button>
-</form>
-
-</code></pre>
-          <div class="sample-result"></div>
-          </details>
-
-
-          <!-- ******* SNIPPET ********** -->
-          <details class="snippet">
-            <summary>Input types</summary>
-<pre><code class="sample language-html">  
-<form class="grid">
-  <label>Nome</label>
-  <input type="text" name="nome" />
-  <label>Peso</label>
-  <input type="number" name="peso" />
-</form>
-
-</code></pre>
-          <div class="sample-result"></div>
-          </details>
-
-
-
-          <!-- ******* SNIPPET ********** -->
-          <details class="snippet" open>
-            <summary>Validação</summary>
-  <pre><code class="sample language-html">  
-<form class="grid">
-  <label>Cidade</label>
-  <input type="text" name="nome" minlength="3" />     
-  <label>Estado</label>
-  <input type="text" name="estado" maxlength="2" />     
-</form>
-  </code></pre>
-            <div class="sample-result"></div>
-            </details>
-
-
-
-
-          <!-- ******* SNIPPET ********** -->
-          <details class="snippet">
-          <summary>Radio</summary>
-<pre><code class="sample language-html">  
-<form class="grid1">
-  <h2>Qualidade do serviço?</h2>
-  <label>
-    <input type="radio" name="pesquisa" value="3" /> 
-    Excelente
-  </label>
-  <label>
-    <input type="radio" name="pesquisa" value="2"/> 
-    Bom
-  </label>
-  <label>
-    <input type="radio" name="pesquisa" value="1"/> 
-    Péssimo
-  </label>
-</form>
-
-</code></pre>
-          <div class="sample-result"></div>
-          </details>
-
-
-
-          <!-- ******* SNIPPET ********** -->
-          <details class="snippet" open>
-            <summary>Checkbox</summary>
-  <pre><code class="sample language-html">  
-  <form>
-    <h2>Tipos de séries favoritas</h2>
-    <label>
-      <input type="checkbox" name="favoritos" value="1" /> 
-      Aventura
-    </label>
-    <label>
-      <input type="checkbox" name="favoritos" value="2"/> 
-      Drama
-    </label>
-    <label>
-      <input type="checkbox" name="favoritos" value="3"/> 
-      Ficção científica
-    </label>
-  </form>
-  
-  </code></pre>
-            <div class="sample-result"></div>
-            </details>
-
-
-        <!-- ******* SNIPPET ********** -->
-        <details class="snippet">
-          <summary>grid form</summary>
-<pre><code class="language-css">  
-.grid {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  align-items: center;
-  gap: 10px;
-}
-.grid label{
-  justify-self: right;
-}
-</code></pre>
-
-<div class="panel" style="display: grid; grid-template-columns: 1fr 1fr;align-items: center;">
-  <pre><code class="sample language-html">
-<form class="grid">
-  <label>Nome</label>
-  <input type="text" name="nome" />
-  <label>CPF</label>
-  <input type="text" name="cpf" />
-  <label>Endereço</label>
-  <input type="text" name="endereco" />
-</form>
-  
-  </code></pre>
-          <div class="sample-result"></div>
-          </details>
-
+<details class="snippet">
+  <summary>form action-method</summary>
+  <div class="snipGrid col2">
+    <pre><code class="sample language-html">  
+      <form action="/endpoint" method="POST">
+        <!-- inputs do formulario -->
+        <button>enviar</button>
+      </form>
+    </code></pre>
+    <div class="sample-result"></div>
+  </div>
 </div>
+</details>
+
+<details class="snippet">
+  <summary>grid form</summary>
+  <div class="snipGrid col2">
+    <pre><code class="language-css">  
+      .grid {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        align-items: center;
+        gap: 10px;
+      }
+      .grid label{
+        justify-self: right;
+      }
+      </code></pre>
+      <div class="panel" style="display:grid;gap:40px; grid-template-columns: 1fr 1fr;align-items: center;">
+        <pre><code class="sample language-html">
+          <form class="grid">
+            <label>Nome</label>
+            <input type="text" name="nome" />
+            <label>CPF</label>
+            <input type="text" name="cpf" />
+            <label>Endereço</label>
+            <input type="text" name="endereco" />
+          </form>
+        </code></pre>
+        <div class="sample-result"></div>
+      </div>
+  </div>
+</div>
+</details>
+
+<details class="snippet">
+  <summary>INPUT types</summary>
+  <div class="snipGrid col2">
+    <pre><code class="sample language-html">        
+      <form class="grid">
+        <label>Nome</label>
+        <input type="text" name="nome" />
+        <label>Peso</label>
+        <input type="number" name="peso" />
+      </form>
+    </code></pre>
+    <div class="sample-result"></div>
+  </div>
+</details>
+
+<details class="snippet">
+  <summary>Input validation</summary>
+  <div class="snipGrid col2">
+    <pre><code class="sample language-html">        
+      <form class="grid">
+        <label>Cidade</label>
+        <input type="text" name="nome" minlength="3" />     
+        <label>Estado</label>
+        <input type="text" name="estado" maxlength="2" />     
+        </form>
+    </code></pre>
+    <div class="sample-result"></div>
+  </div>
+</details>
+
+<details class="snippet">
+  <summary>Radio</summary>
+  <div class="snipGrid col2">
+    <pre><code class="sample language-html">        
+      <form class="grid1">
+        <h2>Qualidade do serviço?</h2>
+        <label>
+          <input type="radio" name="pesquisa" value="3" /> 
+          Excelente
+        </label>
+        <label>
+          <input type="radio" name="pesquisa" value="2"/> 
+          Bom
+        </label>
+        <label>
+          <input type="radio" name="pesquisa" value="1"/> 
+          Péssimo
+        </label>
+        </form>
+      </code></pre>
+    <div class="sample-result"></div>
+  </div>
+</details>
+
+<details class="snippet">
+  <summary>Checkbox</summary>
+  <div class="snipGrid col2">
+    <pre><code class="sample language-html">        
+      <form>
+        <h2>Séries favoritas</h2>
+        <label>
+          <input type="checkbox" name="favoritos" value="1" /> 
+          Aventura
+        </label>
+        <label>
+          <input type="checkbox" name="favoritos" value="2"/> 
+          Drama
+        </label>
+        <label>
+          <input type="checkbox" name="favoritos" value="3"/> 
+          Ficção científica
+        </label>
+      </form>
+      </code></pre>
+    <div class="sample-result"></div>
+  </div>
+</details>
 
 
-      </section>
+</section>
 
-      
-    </div> <!-- close contents -->
+</div> <!-- close contents -->
+</main>
 
-  </main>
+<footer>---</footer>
 
-  <footer>---</footer>
-  <script>
-    document.querySelectorAll(".snippet").forEach(function(el) {
-      let codeEl = el.querySelector("code.sample");
-      let sampleResultEl = el.querySelector(".sample-result");
-      sampleResultEl.innerHTML = codeEl.innerHTML;
-    });
-    document.querySelectorAll("code").forEach(function(element) {
-    element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-  });
-  </script>
+<script>
+//   document.querySelectorAll(".snippet").forEach(function(el) {
+//     let codeEl = el.querySelector("code.sample");
+//     let sampleResultEl = el.querySelector(".sample-result");
+//     sampleResultEl.innerHTML = codeEl.innerHTML;
+//   });
+//   document.querySelectorAll("code").forEach(function(element) {
+//   element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+// });
+html2text(".snippet");
+
+</script>
 
 </body>
 </html>
