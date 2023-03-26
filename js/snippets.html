@@ -35,83 +35,80 @@
     <button onclick="expand(false)">▲</button>
   </header>
 
-        <!-- ******* SNIPPET ********** -->
-        <details class="snippet">
-          <summary>Declaração variáveis</summary>
-<pre><code class="sample language-js">  
-// declara variável idade e inicializa com valor 27
-let idade = 27;
-// declara variável nome com valor "Tamara"
-let nome = "Tamara";
-// declara variavel cotacao
-let cotacao = 5.21;
-
-let idade = 27;
-// incrementa 1 ano
-idade = idade + 1;
-// idade++;
-
-// diminui 1 ano
-idade = idade - 1;
-// idade--;
-
-// imprime idade:
-console.log(idade);
-
-</code></pre>
-        </details>
-
-        <details class="snippet" open>
-          <summary>prompt idade</summary>
-          <button onclick="confirmaIdade()">Solicita passaporte</button>
-          <button onclick="dataHoraAtual()">DataHora atual</button>
-        </details>
+<details class="snippet">
+  <summary>Declaração variáveis</summary>
+  <div class="snipGrid col1">
+    <pre><code class="sample language-js">  
+      // declara variável idade e inicializa com valor 27
+      let idade = 27;
+      // declara variável nome com valor "Tamara"
+      let nome = "Tamara";
+      // declara variavel cotacao
+      let cotacao = 5.21;
+      
+      let idade = 27;
+      // incrementa 1 ano
+      idade = idade + 1;
+      // idade++;
+      
+      // diminui 1 ano
+      idade = idade - 1;
+      // idade--;
+      
+      // imprime idade:
+      console.log(idade);
+      </code></pre>
+  </div>
+</details>
 
 
+<details class="snippet">
+  <summary>prompt idade</summary>
+  <button onclick="confirmaIdade()">Solicita passaporte</button>
+  <button onclick="dataHoraAtual()">DataHora atual</button>
+</details>
 
-      </section>
 
+</section>
 
+</div> <!-- close contents -->
 
-    </div> <!-- close contents -->
+</main>
+<footer>---</footer>
 
-  </main>
+<script>
 
-  <footer>---</footer>
+expand(true);
+html2text("code");
 
-  <script>
-    document.querySelectorAll("code").forEach(function(element) {
-    element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-  });
-  function confirmaIdade(){
+function confirmaIdade(){
 
-    let idade = Number(prompt("Qual a sua idade?"));
-    if (idade>=18) {
-      alert("Pedido de Passaporte autorizado");
-    }
-    else {
-      alert("Passaporte não disponível");
-    }
-
+  let idade = Number(prompt("Qual a sua idade?"));
+  if (idade>=18) {
+    alert("Pedido de Passaporte autorizado");
+  }
+  else {
+    alert("Passaporte não disponível");
   }
 
-  function dataHoraAtual(){
+}
 
-    alert("Data e Hora: " + new Date().toLocaleString());
+function dataHoraAtual(){
 
+  alert("Data e Hora: " + new Date().toLocaleString());
+
+}
+
+function forLoop(){
+
+  let msg = "Mensagem ";
+  
+  for(let i=0; i<10; i++) {
+    console.log("Mensagem número", i);
   }
 
-  function forLoop(){
-
-    let msg = "Mensagem ";
-    
-    for(let i=0; i<10; i++) {
-      console.log("Mensagem número", i);
-    }
-
-  }
-  </script>
-
+}
+</script>
 
 </body>
 </html>

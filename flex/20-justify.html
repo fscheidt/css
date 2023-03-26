@@ -7,6 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
 <script src="../resources/__config.js"></script>
+<script src="../resources/utils.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+<script>hljs.highlightAll();</script>
 <style>
 .Center{
     justify-content: center;
@@ -29,10 +33,15 @@
     </header>
 
     <div class="contents">
+      <p>        
+        Justifica items na <b>horizontal</b> (left, right, center, space-between, space-around, space-evenly)
+        <a class="ext" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"></a>
+      </p>
+
       <section>
         <header>
           <h2>(I) <b class="code">justify-content: center</b></h2>
-          <button class="showCode">show css</button>
+          <button onclick="getStyle()" class="showCode"></button>
         </header>
         <div class="container Center">
           <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
@@ -44,13 +53,19 @@
       <section>
         <header>
           <h2>(II) <b class="code">justify-content: flex-end</b></h2>
-          <button class="showCode">show css</button>
+          <button onclick="getStyle()" class="showCode"></button>
         </header>
         <div class="container End">
           <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
           <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
           <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
         </div>
+
+        <div id="codeWrapper" class="styleCode">
+          <h3>source-code</h3>
+          <pre><code id="source" class="language-css"></code></pre>
+        </div>
+
       </section>
 
     </div> <!-- close contents -->

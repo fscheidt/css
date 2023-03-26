@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
   <script src="../resources/__config.js"></script>
+  <script src="../resources/utils.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+  <script>hljs.highlightAll();</script>
   <style>
   .Fixed3Columns{
     display: grid;
@@ -36,7 +40,7 @@
           <h2>
             <code>grid-template-columns + justify-items</code>
           </h2>
-          <button class="showCode">show css</button>
+          <button onclick="getStyle()" class="showCode"></button>
         </header>
 
         <div class="container Fixed3Columns">
@@ -45,7 +49,10 @@
           <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
         </div>
 
-        <div class="source css">code goes here</div>
+        <div id="codeWrapper" class="styleCode">
+          <h3>source-code</h3>
+          <pre><code id="source" class="language-css"></code></pre>
+        </div>
 
       </section>
 

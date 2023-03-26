@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Archivo+Narrow&family=Inconsolata&family=JetBrains+Mono&family=Noto+Sans&display=swap');
 
 :root {
-  
+  --base-font-size: 1.2rem;
   --border-color: indigo;
   --bg-color: indigo;
   --bg-footer: indigo;
@@ -26,7 +26,15 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+body {
   box-sizing: border-box;
+  font-family: var(--font-sans);
+  font-size: var(--base-font-size);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   /* animation: fadeIn ease 1s; */
   animation: fadeIn ease .1s;
   animation-iteration-count: 1;
@@ -41,18 +49,17 @@ body {
     opacity: 1;
   }
 }
-
-body {
-  font-family: var(--font-sans);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 p {
   line-height: 1.5em;
 }
 h1{
+  font-size: 1.7rem;
+}
+h2{
   font-size: 1.6rem;
+}
+h3{
+  font-size: 1.4rem;
 }
 main {
   flex: 1 0 auto;
@@ -79,9 +86,7 @@ dl{
 }
 nav {
   font-family: var(--font-mono-2);
-  /* background-color: var(--bg-nav); */
   color: var(--text-light);
-  /* padding: var(--pad-y) var(--pad-x); */
 }
 
 header {
@@ -101,7 +106,6 @@ footer a {
 }
 
 /* ====================================== */
-/* HIGHLIGHT JS */
 pre.snippet {
   border: 1px solid var(--border-color);
   font-family: var(--font-mono);
@@ -140,7 +144,6 @@ pre.snippet code {
 }
 
 .topic {
-  
   border: 1px solid var(--topic-color);
   padding: 4px 8px;
   font-weight: bold;
@@ -157,6 +160,7 @@ pre.snippet code {
   display: inline-grid;
   grid-template-columns: max-content;
   gap: 25px;
+  user-select: none;
 }
 
 .nav a {
@@ -167,22 +171,32 @@ pre.snippet code {
   background-color: rgba(230, 245, 240, 0.455);
 }
 
-/* DYNAMIC ELEMENTS */
 #path {
   color: darkgray;
   font-family: var(--font-mono);
-  /* display: none; */
 }
 .showCode {
   font-family: var(--font-mono);
-  display: none;
 }
-
+.showCode::before{
+  content: '⚙';
+}
 div.source {
   font-family: var(--font-mono);
   display: none;
 }
-
+#codeWrapper {
+  display: none;
+}
+#codeWrapper pre{
+  margin: 0;
+}
+.styleCode h3 {
+  margin: 20px 0 0 0;
+}
+.styleCode h3::before{
+  content: '<style> ';
+}
 .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -290,10 +304,11 @@ details summary:hover{
   cursor: pointer;
 }
 details.snippet{
-  margin: 20px 0px 30px 0px;
+  margin: 0px 0px 20px 0px;  
 }
-details.snippet summary{
+details.snippet[open] summary{
   user-select: none;
+  margin-bottom: 20px;
 }
 .snipGrid{
   display: grid;
@@ -308,10 +323,10 @@ details.snippet summary{
 
 .col1{
   grid-template-columns: max-content;
-  gap: 50px;
+  gap: 30px;
 }
 
 .col2{
   grid-template-columns: max-content max-content;
-  gap: 50px;
+  gap: 30px;
 }

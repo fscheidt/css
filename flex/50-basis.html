@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
     <script src="../resources/__config.js"></script>
-    <style>
+    <script src="../resources/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+    <script>hljs.highlightAll();</script>
+  <style>
     #content {
       display: flex;
     }
@@ -48,12 +52,21 @@
             It sets the size of the content box unless otherwise set with box-sizing.
             <a class="ext" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">mdn</a>.
         </p>
-
+        <p>
+          <button onclick="getStyle()" class="showCode"></button>
+        </p>
+        
         <div id="content">
           <div class="box0">A</div>
           <div class="box1">B</div>
           <div class="box2">C</div>
         </div>
+
+        <div id="codeWrapper" class="styleCode">
+          <h3>source-code</h3>
+          <pre><code id="source" class="language-css"></code></pre>
+        </div>
+
       </section>
 
     </div> <!-- close contents -->
@@ -61,6 +74,12 @@
   </main>
 
   <footer>---</footer>
-
+<script>
+  // document.querySelector('.showCode').addEventListener('click', function(){
+  //   let sc = document.querySelector('style').innerHTML;
+  //   sc = sc.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  //   document.querySelector('#source').innerHTML = sc;
+  // });
+</script>
 </body>
 </html>
