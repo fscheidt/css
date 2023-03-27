@@ -21,18 +21,12 @@
     .box code{
       background-color: initial;
     }
-    .bb {
+    .box {
       box-sizing: border-box;
     }
+    
   </style>
-  <script>
-    window.onload = function() {
-      document.querySelector('#box1w').innerHTML += document.querySelector('.box').offsetWidth + 'px';
-      document.querySelector('#box1h').innerHTML += document.querySelector('.box').offsetHeight + 'px';
-      document.querySelector('#box2w').innerHTML += document.querySelector('.bb').offsetWidth + 'px';
-      document.querySelector('#box2h').innerHTML += document.querySelector('.bb').offsetHeight + 'px';
-    }
-  </script>
+  
 </head>
 
 <body>
@@ -86,5 +80,13 @@
 
   <footer>---</footer>
 
+  <script>
+    
+    document.querySelector('#box1w').innerHTML += document.querySelector('.box').offsetWidth + 'px';
+    document.querySelector('#box1h').innerHTML += document.querySelector('.box').offsetHeight + 'px';
+    document.querySelector('#box2w').innerHTML += document.querySelector('.bb').offsetWidth + 'px';
+    document.querySelector('#box2h').innerHTML += document.querySelector('.bb').offsetHeight + 'px';
+    
+  </script>
 </body>
 </html>
