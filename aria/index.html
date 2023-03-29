@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <script src="../resources/__config.js"></script>
+  <script src="../resources/__config.js"></script>
+  <script src="../resources/utils.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+  <script>hljs.highlightAll();</script>
+  
+  
+</head>
+
+<body>
+  <main>
+    <nav>
+      <a class="i" href="../index.html">index</a>
+      <span id="path"></span>
+    </nav>
+    <header class="main">
+      <h1 class="title">ARIA</h1>
+      <span class="topic c">html</span>
+    </header>
+    
+    <div class="contents">
+      <section>
+        <p>Permite a marcação de regiões importantes na página (como uma caixa de busca, um cabeçalho, chamadas "pontos de referência") para facilitar a navegação em leitores de tela</p>
+        <p>Add machine-readable semantics for an assistive technology to html elements.</p>
+        <p>Enables developers to describe their widgets in more detail by adding special attributes to the markup.</p>
+        <p>Provides roles and states that describe the behavior of most familiar UI widgets.</p>
+      </section>
+
+      <section>
+
+        <h2 class="title">ROLE</h2>
+        <p>Roles describe widgets that aren't otherwise available in HTML 4, such as sliders, menu bars, tabs, and dialogs.</p>
+        <p>An element with role="slider" will be controlled in the same way as a native slider is controlled on the operating system.</p>
+        <p>Rolde can be used, for example, by applications and assistive technologies to determine the purpose of an element.</p>
+
+        <header>
+          <h2>aria-label</h2>
+          <button onclick="expand(true)">expand</button>
+          <button onclick="expand(false)">▲</button>
+        </header>
+
+
+<details class="snippet">
+  <summary>button aria-label</summary>
+  <p>Adiciona um rótulo com descrição textual que pode ser usado por uma tecnologia assistiva.</p>
+  <div class="snipGrid col1">
+    <pre><code class="sample language-html">
+    <button aria-label="screen reader only label"></button>
+    </code></pre>
+    <div class="sample-render"></div>
+  </div>
+</details>
+      
+      </section>
+      
+      
+
+    </div> <!-- close contents -->
+
+  </main>
+
+  <footer>---</footer>
+
+  <script>
+    expand(true);
+    html2text(".snippet");
+  </script>
+</body>
+</html>
