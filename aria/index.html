@@ -42,21 +42,37 @@
         <p>An element with role="slider" will be controlled in the same way as a native slider is controlled on the operating system.</p>
         <p>Rolde can be used, for example, by applications and assistive technologies to determine the purpose of an element.</p>
 
-        <header>
-          <h2>aria-label</h2>
-          <button onclick="expand(true)">expand</button>
-          <button onclick="expand(false)">▲</button>
-        </header>
+<header>
+  <h2>snippets</h2>
+  <button onclick="expand(true)">expand</button>
+  <button onclick="expand(false)">▲</button>
+</header>
 
 
 <details class="snippet">
-  <summary>button aria-label</summary>
+  <summary>role-main</summary>
+  <p>The main role is used to indicate the primary content of a document.
+  </p>
+  <div class="snipGrid col2">
+    <pre><code class="sample language-html">
+      <div id="main" role="main">
+        <h1>Avocados</h1>
+        <!-- main section content -->
+      </div>
+    </code></pre>
+    <div class="sample-render hidden"></div>
+  </div>
+</details>
+
+
+<details class="snippet">
+  <summary>aria-label</summary>
   <p>Adiciona um rótulo com descrição textual que pode ser usado por uma tecnologia assistiva.</p>
   <div class="snipGrid col1">
     <pre><code class="sample language-html">
     <button aria-label="screen reader only label"></button>
     </code></pre>
-    <div class="sample-render"></div>
+    <div class="sample-render hidden"></div>
   </div>
 </details>
       

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GRID AREA</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .gridLayout {
+    display: grid;
+    grid-template-areas: 
+      "header header" 
+      "menu main" 
+      "footer footer";
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  main, header, footer, nav{
+    padding: 1rem;
+  }
+  header{
+    grid-area: header;
+    background-color: aquamarine;
+  }
+  nav{
+    grid-area: menu;
+    background-color: rgb(241, 200, 248);
+  }
+  main{
+    grid-area: main;
+    background-color: #ffffa5;
+  }
+  footer{
+    grid-area: footer;
+    background-color: #f6bcc5;
+  }
+  </style>
+</head>
+
+<body>
+<div class="gridLayout">
+  
+  <header>
+    <h1 class="title">título 12</h1>
+  </header>
+  
+  <nav>
+    <span class="topic c">grid</span>
+    <a class="i" href="index.html">index</a>
+    <span id="path"></span>
+  </nav>
+
+  <main>
+    <div class="contents">
+
+      <section>
+        <h2>
+          Conteúdo
+        </h2>
+        <div>
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+
+        
+  </main>
+
+  <footer>RODAPE</footer>
+
+</div>
+
+</body>
+</html>

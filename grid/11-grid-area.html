@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GRID AREA</title>
+  <link rel="icon" href="../resources/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="../resources/base.css"/> -->
+  <!-- <script src="../resources/__config.js"></script> -->
+  <!-- <script src="../resources/utils.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script> -->
+  <!-- <link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/> -->
+  <!-- <script>hljs.highlightAll();</script> -->
+  <style>
+  .tresAreas{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+  }
+  main, header.main, footer{
+    padding: 1rem;
+  }
+  header.main{
+    grid-area: "header";
+    background-color: aquamarine;
+  }
+  main{
+    grid-area: "main";
+    background-color: yellow;
+  }
+  footer{
+    grid-area: "footer";
+    background-color: lightpink;
+  }
+  </style>
+</head>
+
+<body>
+
+<div class="gridLayout">
+  
+  <header class="main">
+    <h1 class="title">título</h1>
+    <span class="topic c">grid</span>
+    <nav>
+      <a class="i" href="index.html">index</a>
+      <span id="path"></span>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contents">
+
+      <section>
+          <h2>
+            Conteúdo
+          </h2>
+
+        <div>
+          <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat laudantium facere? Eum hic eius labore consequatur? Minus, rerum esse! Nesciunt, animi! Optio, quaerat. Sint vel cumque provident necessitatibus neque!</p>
+          <p class="card">Pariatur corporis totam sapiente, aliquam placeat sit accusantium dolorum mollitia maiores velit adipisci inventore incidunt laudantium sed expedita iure ullam excepturi deserunt.</p>
+          <p class="card">Perspiciatis, possimus dicta voluptatem cumque non quasi natus earum temporibus voluptatibus</p>
+        </div>
+        
+  </main>
+
+  <footer>RODAPE</footer>
+
+</div>
+
+</body>
+</html>

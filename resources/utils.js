@@ -8,7 +8,9 @@ function html2text(targetEl) {
   document.querySelectorAll(target).forEach(function(el) {
     let codeEl = el.querySelector("code.sample");
     let sampleResultEl = el.querySelector(".sample-render");
-    sampleResultEl.innerHTML = codeEl.innerHTML;
+    if(!sampleResultEl.classList.contains("hidden")){
+      sampleResultEl.innerHTML = codeEl.innerHTML;
+    }
   });
   document.querySelectorAll("code").forEach(function(element) {
   element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
