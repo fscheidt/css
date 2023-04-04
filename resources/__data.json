@@ -1,0 +1,12 @@
+{
+  "conceitos": {
+    "html": {
+      "tag": { "def": "tag definition" },
+      "elemento": { "def" : "el def" }
+    },
+    "css": {
+      "propriedade": { "def": "prop" },
+      "valor": { "def": "value" }
+    }
+  }
+}
