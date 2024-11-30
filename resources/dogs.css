@@ -1,0 +1,49 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/resources/fonts/acme-v25-latin-regular.woff2') format('woff2');
+}
+/* albert-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Albert Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/resources/fonts/albert-sans-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* albert-sans-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Albert Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/resources/fonts/albert-sans-v1-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root{
+  --base-font: "Albert Sans";
+  /* --base-font: "Acme"; */
+}
+body{
+  font-family: var(--base-font);
+  zoom: 2;
+}
+.card {
+  background-color: rgb(214, 206, 220);
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 3px 3px 5px 1px #b8b8b8;
+}
+.card img{
+  max-width: 100%;
+}
+.contents{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+.hidden{
+  display: none;
+}
