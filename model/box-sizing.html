@@ -21,7 +21,12 @@
     .box code{
       background-color: initial;
     }
-    .box {
+    .box span, .box code{
+      /* box-sizing: border-box; */
+      visibility: hidden;
+    }
+
+    .bb {
       box-sizing: border-box;
     }
     
@@ -56,6 +61,7 @@
         
         <h2>padrão: content-box</h2>
         <div class="box">
+          <p>340 x 180</p>
           <code>width: 300px;</code>
           <code>box-sizing: content-box</code>
           <span id="box1w">width real: </span>
@@ -66,6 +72,7 @@
         
         <h2>com <code>border-box</code></h2>
         <div class="box bb">
+          <p>300 x 140</p>
           <code>width: 300px;</code>
           <code>box-sizing: border-box</code>
           <span id="box2w">width real: </span>
