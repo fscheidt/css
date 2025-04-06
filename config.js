@@ -8,6 +8,7 @@ const opts = {
     page: {
       zoom: Math.round(window.devicePixelRatio * 100),
       url: "",
+      host: "",
     },
     footer: {
         links: [
@@ -35,9 +36,6 @@ function setConceitos(){
       }
       wrapper.innerHTML = html;
   }
-  // else{
-  //     console.log('! conceitos nao existe');
-  // }
 }
 function getData(){
   fetch('./resources/__data.json')
@@ -55,9 +53,6 @@ function setTitle(){
         document.title = title.textContent;
         console.log('title:',title.textContent);
     }
-    // else{
-    //     console.log('! title not found');
-    // }
 }
 
 function setFooter(){
@@ -65,14 +60,12 @@ function setFooter(){
     if(footer){
         let links = opts.footer.links;
         let html = "";
+        let path = opts.page.host.startsWith("fscheidt") ? "/css":"";
         for(let i = 0; i < links.length; i++){
-            html += `<a href="${links[i].url}">${links[i].name}</a>`;
+            html += `<a href="${path}${links[i].url}">${links[i].name}</a>`;
         }
         footer.innerHTML = html;
     }
-    // else{
-    //     console.log('! footer not found');
-    // }
 }
 function setPath(){
   opts.page.url = window.location.pathname;
@@ -82,10 +75,11 @@ function setPath(){
 }
 function setPage(page){
   console.log('[init page]');
+  opts.page.host = window.location.host;
   setPath();
-  if(opts.page.url === "/index.html"){
-    getData();
-  }
+  // if(opts.page.url === "/index.html"){
+  //   getData();
+  // }
   setFooter();
   setTitle();
 }

@@ -10,14 +10,14 @@
   --color-link-dark: #9fc7ff;
   --color-link-empty: rgb(152, 71, 71);
   --border-topic: 1px solid rgb(104, 104, 104);
-  --zoom: 3;
+  --zoom: 1;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html{ zoom: var(--zoom-, 2)}
+html{ zoom: var(--zoom, 1)}
 body{
   /* display: grid; */
   flex: 1 0 auto;
