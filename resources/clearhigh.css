@@ -2,10 +2,8 @@ pre code.hljs {
   display: block;
   line-height: 1.8em;
   overflow-x: auto;
-  padding: 0;
-  /* font-family: "JetBrains mono"; */
-  /* font-family: "Inconsolata"; */
-  font-family: "BlexMono Nerd Font";
+  padding: 0;  
+  font-family: var(--font-monot);
   background-color: white !important;
 }
 .hljs{

@@ -5,7 +5,7 @@
   <title>align-items</title>
   <link rel="icon" href="../resources/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
+  <link id="base" rel="stylesheet" type="text/css" href="../resources/base.css"/>
   <script src="../resources/__config.js"></script>
   <script src="../resources/utils.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
@@ -28,6 +28,7 @@
 <body>
   <main>
     <nav>
+      <button onclick="swapCss()">base</button>
       <a class="i" href="index.html">index</a>
       <span id="path"></span>
     </nav>
@@ -106,6 +107,14 @@
     <footer>---</footer>
 
   </main>
+  <script>
+    function swapCss(){
+      let href = "../resources/base2.css";
+      let hnow = document.querySelector("#base").getAttribute("href")
+      if (href == hnow){ href = "../resources/base.css" }
+      document.querySelector("#base").setAttribute("href", href);
+    }
+  </script>
 
 </body>
 </html>

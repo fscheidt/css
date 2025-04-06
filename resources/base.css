@@ -3,18 +3,21 @@
 :root {
   --font-mono: "Reddit Mono", monospace;
   --font-base: "Albert Sans", sans-serif;
+  --font-list: "IBM Plex Sans", sans-serif;
   --bg-page: #ccc;
   --bg-main: #f4ecfafa;
   --color-link: rgb(54, 85, 139);
   --color-link-dark: #9fc7ff;
-  --zoom: 2;
+  --color-link-empty: rgb(152, 71, 71);
+  --border-topic: 1px solid rgb(104, 104, 104);
+  --zoom: 3;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html{ zoom: var(--zoom, 1)}
+html{ zoom: var(--zoom-, 2)}
 body{
   /* display: grid; */
   flex: 1 0 auto;
@@ -34,28 +37,45 @@ main {
                        "header"
                        "content"
                        "footer";
-  background: var(--bg-main--, #eedcfbfa);
+  background: var(--bg-main, #eedcfbfa);
   padding: 0;  
   max-width: 1200px;
   margin: auto;
+  min-height: 100vh;
+  align-content: baseline;
 }
 ul, ol{
   margin: 0 2rem;
+  font-family: var(--font-list);
+}
+ol{
+  margin: 0 2.5rem;
+}
+details{
+  margin: 0.4rem 1rem;
+  font-family: var(--font-list);
+}
+details summary:hover{
+  cursor: pointer;
+  color: rgb(108, 40, 199);
 }
 nav{
   grid-area: nav;
   margin: 1rem;
   /* background:rgba(9, 238, 108, 0.177); */
 }
-header.main{
+header,
+header.main, 
+main > header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
   grid-area: header;
   margin: 0.5rem 1rem;
-  /* background:rgba(238, 200, 9, 0.177); */
 }
 div.contents{
   margin: 0.5rem 1rem;
   grid-area: content;
-  /* background: #fbc8e4; */
 }
 section{
   margin: 1rem 0;
@@ -73,10 +93,85 @@ footer{
 }
 a, a:visited, a:link{
   color: var(--color-link);
+  text-decoration: none;
 }
 footer a {
   color: var(--color-link-dark) !important;
 }
 a:hover{
   filter: invert(0.2) hue-rotate(90deg);
+}
+a.index,
+a.i {
+  text-transform: uppercase;
+  font-family: var(--font-mono, "Ubuntu");
+}
+a[href="#"] {
+  color: var(--color-link-empty);
+}
+a.index::before {
+  content: '▲ ';
+}
+a.ext::before {
+  content: '➥ ';
+}
+.topic {
+  border: var(--border-topic);
+  padding: 4px 8px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.c,
+.n {
+  font-family: var(--font-mono);
+}
+.topic.flex {
+  color: indigo;
+  border-color: indigo;
+}
+#path {
+  color: darkgray;
+  font-family: var(--font-mono);
+}
+
+
+.showCode {
+  font-family: var(--font-mono);
+}
+.showCode::before{
+  content: '⚙';
+}
+div.source {
+  font-family: var(--font-mono);
+  display: none;
+}
+#codeWrapper {
+  display: none;
+}
+#codeWrapper pre{
+  margin: 0;
+}
+.styleCode h3 {
+  margin: 20px 0 0 0;
+}
+.styleCode h3::before{
+  content: '<style> ';
+}
+pre{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+.logo {
+  background-image: url('imgs/gh.png');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a.logo {
+  width: 24px;
+  height: 24px;
+  justify-self: end;
 }
