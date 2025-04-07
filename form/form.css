@@ -1,0 +1,72 @@
+/* ------- form ------- */
+.grid {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 10px;
+  align-items: center;
+  user-select: none;
+  box-sizing: border-box;
+}
+.grid label{
+  justify-self: right;
+}
+form input, 
+form button, 
+form textarea{
+  padding: 5px;
+}
+form select{
+  padding: 5px;
+  line-height: 1.5em;
+}
+form input,
+form textarea {
+  line-height: 1.5em;
+}
+input[type='radio'], 
+input[type='checkbox'] {
+  width: max-content;
+  transform: scale(1.5);
+}
+select {
+  outline: none;
+}
+.grid button{
+  grid-column: 2 / 3;
+  justify-self: flex-start;
+}
+.grupo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.grupo label{
+  margin-right: 20px;
+}
+input:invalid{
+  color: red;
+}
+
+/* code snippets */
+
+
+.snipGrid{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-items: left;
+  /* border: 2px solid var(--border-color); */
+  overflow-y: auto;
+}
+
+.col1{
+  grid-template-columns: max-content;
+  gap: 30px;
+}
+
+.col2{
+  grid-template-columns: max-content max-content;
+  gap: 30px;
+}

@@ -83,11 +83,14 @@ section{
 section h1, section h2, section h3{
   margin: 1.0rem 0 0.5rem 0;
 }
+h1 { font-size: 1.7rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
 footer{
   grid-area: topo;
   display: flex;
   gap: 10px;
-  padding: 0.1rem 1rem;
+  padding: 0.4rem 1rem;
   background: var(--bg-footer, #4c494e);
   color: white;
 }

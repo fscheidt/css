@@ -2,9 +2,9 @@ pre code.hljs {
   display: block;
   line-height: 1.8em;
   overflow-x: auto;
-  padding: 0;  
-  font-family: var(--font-monot);
-  background-color: white !important;
+  font-family: var(--font-mono);
+  transform: translateX(-40px) !important;
+  background: #ffffff00 !important;
 }
 .hljs{
 }
