@@ -6,12 +6,41 @@
   <link rel="icon" href="../resources/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../resources/base.css"/>
-  <script src="../config.js"></script>
-  <script src="../config.js"></script>
-  <script src="../resources/utils.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../resources/clearhigh.css"/>
+  <script src="../config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
+  <style>
+    div.contents{
+      /* white-space: normal; */
+      display:grid;
+      grid-template-columns: 1fr;
+    }
+    section{
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+    }
+    p{
+      /* white-space: wrap; */
+    }
+    .snipGrid{
+      background: yellow;
+      display: grid;
+      grid-template-columns: 1fr;
+      overflow-x: hidden;
+      /* text-overflow: clip; */
+    }
+    .snipGrid pre{
+      width: fit-content;
+      overflow: scroll;
+      text-overflow: clip;
+    }
+    .snipGrid pre code{
+      /* max-width: 100%; */
+      /* text-overflow: clip; */
+      /* overflow: hidden; */
+    }
+</style>
   
 </head>
 
@@ -38,32 +67,32 @@
 
       <section>
 
-        <h2 class="title">ROLE</h2>
+        <!-- <h2 class="title">ROLE</h2>
         <p>Roles describe widgets that aren't otherwise available in HTML 4, such as sliders, menu bars, tabs, and dialogs.</p>
         <p>An element with role="slider" will be controlled in the same way as a native slider is controlled on the operating system.</p>
-        <p>Rolde can be used, for example, by applications and assistive technologies to determine the purpose of an element.</p>
+        <p>Rolde can be used, for example, by applications and assistive technologies to determine the purpose of an element.</p> -->
 
-<header>
-  <h2>snippets</h2>
-  <button onclick="expand(true)">expand</button>
-  <button onclick="expand(false)">▲</button>
-</header>
+      <!-- <header>
+        <h2>snippets</h2>
+        <button onclick="expand(true)">expand</button>
+        <button onclick="expand(false)">▲</button>
+      </header> -->
 
-
-<details class="snippet">
-  <summary>role-main</summary>
-  <p>The main role is used to indicate the primary content of a document.
-  </p>
-  <div class="snipGrid col2">
-    <pre><code class="sample language-html">
-      <div id="main" role="main">
-        <h1>Avocados</h1>
-        <!-- main section content -->
-      </div>
-    </code></pre>
-    <div class="sample-render hidden"></div>
-  </div>
-</details>
+<!-- 
+      <details class="snippet">
+        <summary>role-main</summary>
+        <p>The main role is used to indicate the primary content of a document.
+        </p>
+        <div class="snipGrid col2">
+          <pre><code class="sample language-html">
+            <div id="main" role="main">
+              <h1>Avocados</h1>
+              .!-- main section content --
+            </div>
+          </code></pre>
+          <div class="sample-render hidden"></div>
+        </div>
+      </details> -->
 
 
 <details class="snippet">
